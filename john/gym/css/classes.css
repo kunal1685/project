@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+:root{
+    --ornage-color: #FB5B21;
+    --white-color: #F4F5F8;
+    --gray-color: #BDBDBF;
+    --black-color: #222429;
+}
+
+#classes{
+    background-image: linear-gradient(rgba(50,50,50,0.6),rgba(50,50,50,0.6)), url('../gym/img/carousel-1.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 8rem;
+}
+#classes h1{
+    color: var(--white-color);
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+#classes .btn{
+    padding: 0.7rem 3rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#classes .btn1{
+    background-color: var(--ornage-color);
+}
+#classes .btn2{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+#myNavbar{
+    padding: 0% 1%;
+}
+#myNavbar .navbar-brand{
+    color: var(--ornage-color);
+    font-size: 50px;
+    font-weight: 700;
+    /* margin-right: 40px; */
+}
+#myNavbar ul:not(.dropdown-menu){
+    margin-left: 130px;
+}
+#myNavbar ul a{
+    padding: 0px 20px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+#myNavbar .btn{
+    background-color: var(--ornage-color);
+    padding: 15px 30px;
+    color: var(--white-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+/*------------------ carausel2 starts now -------------------- */
+#section2{
+    background-color: var(--black-color);
+    margin-top: 12rem;
+    padding-bottom: 5rem;
+}
+
+#section2 .box{
+    width: 95%;
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 4rem;
+    margin-top: -5rem;
+    border-radius: 5px;
+}
+#section2 h2{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1.5rem 0rem;
+}
+#section2 i{
+    font-size: 6rem;
+    color: var(--ornage-color);
+}
+#section2 .ml{
+    margin-left: 7%;
+}
+#section2 .mr{
+    margin-left: 3.5%;
+}
+#section2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--ornage-color);
+    font-weight: 2rem;
+}
+#section2 a i{
+    font-size: 1.2rem;
+}
+
+#section2 .discount{
+    color: var(--white-color);
+    margin-top: 3rem;
+}
+#section2 .discount a{
+    display: inline-block;
+    background-color: var(--ornage-color);
+    color: var(--white-color);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+/*------------------ footer starts now -------------------- */
+footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    margin-top: 200px;
+    /* padding: 4rem 0rem; */
+}
+footer .links{
+    padding: 3rem;
+}
+footer h3{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+footer i{
+    color: var(--ornage-color);
+    width: 20px;
+}
+footer p{
+    color: var(--gray-color);
+}
+footer .mail{
+    text-align: center;
+    background-color: var(--ornage-color);
+    color: var(--white-color);
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer form{
+    width: 100%;
+    display: flex;
+}
+footer input{
+    flex: 1;
+    width: 59%;
+    padding: 1rem;
+    border: none;
+}
+footer form input:nth-child(1){
+    padding-right: 4.5rem;
+}
+footer form input:nth-child(2){
+    /* width: 20%; */
+    text-transform: uppercase;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px){
+    #myNavbar ul:not(.dropdown-menu){
+        margin-left: 20px;
+    }
+    #myNavbar .btn{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    html{
+        font-size: 10px;
+    }
+    #myNavbar .nav-link{
+        padding: 15px 0px;
+    }
+    #myNavbar .dropdown-item{
+        padding: 10px;
+    }
+
+    /* classes */
+    #classes{
+        height: 50vh;
+        padding: 0rem;
+        position: relative;
+        margin-bottom: 100px;
+    }
+    .txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    /* section2 */
+    #section2{
+        padding: 0px 50px;
+        margin-top: 4rem;
+    }
+    #section2 .box{
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+    #section2 .ml{
+        margin-left: 0%;
+    }
+    #section2 .mr{
+        margin-left: 0%;
+    }
+    #section2 .discount{
+        margin-top: 0rem;
+    }
+    #section2 .discount a{
+        margin-bottom: 5rem;
+    }
+
+}

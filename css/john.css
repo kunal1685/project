@@ -1,0 +1,972 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-white-color: #fff;
+    --main-pink-color: #F85C70;
+    --main-blk-color: #333;
+    --border-color: rgba(232, 223, 223, 0.922);
+}
+html{
+    font-size: 15px;
+    color: var(--main-blk-color);
+    scroll-behavior: smooth;
+}
+
+.fixed-box{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #17263C;
+    padding: 0.4rem 0.5rem;
+    border-radius: 20px;
+}
+.fixed-box a{
+    color: var(--main-white-color);
+}
+
+/* -------------------------- header starts now ------------------------- */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../john/imgs/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 2% 4%;
+    color: var(--main-white-color);
+    position: relative;
+}
+
+.links i{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+header .links a{
+    color: var(--main-white-color);
+}
+
+.banner{
+    position: absolute;
+    top: 50%;
+    transform: translateY( -50%);
+}
+
+.banner h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: -2rem;
+}
+.banner h1{
+    font-size: 6rem;
+    font-weight: 600;
+}
+.banner p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: -1rem;
+}
+.banner a{
+    display: inline-block;
+    background-color: var(--main-pink-color);
+    color: var(--main-white-color);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    margin-top: 2rem;
+    transition: 0.5s;
+}
+.banner a:hover{
+    background-color: #e92f48;
+}
+.banner a i{
+    margin-right: 10px;
+}
+
+/* -------------------------- nav starts now ------------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--main-white-color);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: var(--main-blk-color);
+    font-weight: 700;
+}
+nav ul li:nth-child(2){
+    margin: 0px 3rem;
+}
+nav .text{
+    color: var(--main-blk-color);
+    text-align: center;
+}
+nav h2{
+    font-weight: 400;
+}
+nav p{
+    font-size: 0.8rem;
+}
+
+/* -------------------------- about starts now ------------------------- */
+.inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+#about .box{
+    flex-basis: 33.33%;
+    padding: 4rem 3rem;
+    border: 0.5px solid rgba(232, 223, 223, 0.922);
+}
+#about h2{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+#about h2::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background-color: var(--main-pink-color);
+}
+#about h3{
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+#about p{
+    color: gray;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+}
+#about a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-pink-color);
+    border: 1px solid var(--main-pink-color);
+    padding: 8px 16px;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+#about >.box >p >span{
+    font-weight: 700;
+    color: var(--main-blk-color);
+    line-height: 2rem;
+}
+#about .links{
+    margin-top: 2rem;
+    color: var(--main-pink-color);
+}
+#about i{
+    transition: 0.5s;
+}
+#about i:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+#about .design{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#about .design i{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--main-pink-color);
+}
+#about .text{
+    padding-bottom: 1rem;
+    border-bottom: 0.5px solid var(--border-color);
+}
+#about .top{
+    padding-top: 1rem;
+}
+
+/* -------------------------- resume starts now ------------------------- */
+#resume{
+    padding: 100px 0px;
+}
+#resume h1{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+#resume h1 span{
+    color: var(--main-pink-color);
+}
+#resume .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#box-1{
+    width: 48%;
+    border: 0.5px solid var(--border-color);
+    padding: 2rem;
+}
+#box-2{
+    width: 48%;
+    border: 0.5px solid var(--border-color);
+    padding: 2rem;
+}
+#resume h2{
+    font-weight: 400;
+    margin-bottom: 3rem;
+    position: relative;
+}
+#resume h2::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: 30px;
+    background-color: var(--main-pink-color);
+}
+#resume h4{
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--main-pink-color);
+    margin: 0.4rem 0rem;
+}
+#resume h5, p{
+    color: gray;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+#resume h5{
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+#resume hr{
+    width: 100%;
+    border: 0.5px solid var(--border-color);
+    margin: 2rem 0px;
+}
+
+#resume .skills-lenght{
+    width: 100%;
+    height: 5px;
+    color: var(--border-color);
+    background-color: var(--border-color);
+    margin: 10px 0px 20px;
+    border-radius: 10px;
+}
+
+#resume #one{
+    width: 90%;
+    height: 100%;
+    background-color: var(--main-pink-color);
+}
+#resume #two{
+    width: 70%;
+    height: 100%;
+    background-color: var(--main-pink-color);
+}
+#resume #three{
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-pink-color);
+}
+
+#resume #five{
+    width: 80%;
+    height: 100%;
+    background-color: var(--main-pink-color);
+}
+#resume .hr{
+    margin-top: 3rem;
+}
+#resume .lang{
+    margin: 2rem 0px;
+}
+
+/* -------------------------- details starts now ------------------------- */
+#details{
+    background-color: var(--main-blk-color);
+    padding: 5rem 0rem;
+}
+#details .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#details .times{
+    display: flex;
+    width: 20%;
+}
+#details i{
+    font-size: 70px;
+    color: var(--main-white-color);
+    margin: 1rem;
+}
+#details .sub-t{
+    padding: 1rem;
+    border-left: 1px solid var(--main-white-color);
+}
+#details h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--main-pink-color);
+}
+
+#details p{
+    font-weight: 500;
+    color: var(--border-color);
+}
+
+/* -------------------------- services starts now ------------------------- */
+#services{
+    padding-top: 100px;
+}
+#services h1{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+#services h1 span{
+    color: var(--main-pink-color);
+}
+#services .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#services .box{
+    width: 31%;
+    border: 0.5px solid var(--border-color);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+    transition: all 0.5s;
+}
+#services .box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(116, 112, 112, 0.28);
+}
+
+#services h4{
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    background-color: var(--main-white-color);
+    padding: 0rem 0.8rem;
+}
+
+
+#services i{
+    font-size: 10rem;
+}
+#services .html{
+    color: #f06529;
+}
+#services .css{
+    color: #264de4;
+}
+#services .js{
+    color: #F0DB4F;
+}
+#services .bs{
+    color: #712cf9;
+    transform: rotate(-15deg);
+}
+#services .ss{
+    color: #CD6799;
+}
+
+/* -------------------------- packs starts now ------------------------- */
+#packs{
+    padding-top: 100px;
+}
+#packs h1{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+#packs h1 span{
+    color: var(--main-pink-color);
+}
+
+#packs .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#packs .boxes h1{
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 0px;
+    position: relative;
+}
+#packs .box{
+    width: 23%;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+}
+#packs .box h2{
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+#packs .boxes h1{
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 0px;
+    position: relative;
+}
+#packs .one{
+    font-size: 1.5rem;
+    font-weight: 300;
+    vertical-align: top;
+    margin-right: 5px;
+    /* position: absolute;
+    top: 0px;
+    left: 40px; */
+}
+#packs .two{
+    font-size: 0.9rem;
+    font-weight: 300;
+    /* vertical-align: bottom; */
+    padding-bottom: 20px !important;
+    /* position: absolute;
+    bottom: 20px;
+    right: 25px; */
+}
+#packs p{
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+#packs p span{
+    color: #000;
+}
+#packs a{
+    display: inline-block;
+    background-color: var(--main-pink-color);
+    color: var(--main-white-color);
+    text-decoration: none;
+    padding: 8px 40px;
+    border-radius: 25px;
+    margin-top: 3rem;
+    transition: 0.5s;
+}
+#packs a:hover{
+    background-color: #e92f48;
+}
+#new{
+    transform: scale(1.1);
+    position: relative;
+    overflow: hidden;
+}
+#new::before{
+    content: "New";
+    width: 120px;
+    background-color: var(--main-pink-color);
+    color: var(--main-white-color);
+    padding: 5px;
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+}
+
+/* -------------------------- hire starts now ------------------------- */
+#hire{
+    background-color: var(--main-blk-color);
+    color: var(--main-white-color);
+    text-align: center;
+    margin: 8rem 0rem 0rem;
+    padding: 5rem 0rem;
+}
+#hire h1{
+    font-weight: 400;
+}
+#hire a{
+    display: inline-block;
+    background-color: var(--main-pink-color);
+    color: var(--main-white-color);
+    text-decoration: none;
+    padding: 0.4rem 3rem;
+    margin-top: 2rem;
+}
+
+/* -------------------------- project starts now ------------------------- */
+#project{
+    padding: 100px 0px;
+}
+#project h1{
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+#project span{
+    color: var(--main-pink-color);
+}
+#project .box{
+    width: 100%;
+    border: 1px solid var(--border-color);
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+#project .pic{
+    width: 32%;
+    position: relative;
+    border: 2px solid var(--main-blk-color);
+    /* height: auto; */
+}
+#project img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background-color: #e92f489b;
+}
+#project h3{
+    color: var(--main-white-color);
+    font-weight: 400;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+#project .pic:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+#project .text{
+    width: 68%;
+    padding: 2%;
+}
+#project .text h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#project .box h6{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+#project .box span{
+    color: var(--main-blk-color);
+    margin-left: 1rem;
+}
+#project .box span i{
+    color: var(--main-pink-color);
+    margin-right: 0.4rem;
+}
+#project p{
+    padding: 1.2rem 0rem;
+}
+#project button{
+    background-color: transparent;
+    border: none;
+    color: var(--main-pink-color);
+    font-size: 0.8rem;
+}
+#project button i{
+    font-weight: 100;
+}
+
+/* -------------------------- contact starts now ------------------------- */
+#contact{
+    /* padding-top: 100px; */
+    position: relative;
+}
+#contact iframe{
+    width: 100%;
+    height: 700px;
+}
+#contact .detail{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+}
+
+
+#contact .detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#contact form{
+    width: 65%;
+    background-color: var(--main-white-color);
+    padding: 2rem;
+}
+
+#contact h2{
+    font-weight: 400;
+    margin-bottom: 3rem;
+    position: relative;
+}
+#contact h2::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 2px;
+    width: 30px;
+    background-color: var(--main-pink-color);
+}
+
+#contact form input{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+#contact form textarea{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+#contact a{
+    display: block;
+    text-decoration: none;
+    background-color: var(--main-pink-color);
+    color: var(--main-white-color);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem 0rem;
+    border-radius: 5px;
+}
+
+#contact .address{
+    width: 32%;
+    background-color: var(--main-white-color);
+}
+#contact .address{
+    padding: 2rem;
+}
+#contact h4{
+    font-weight: 400;
+}
+#contact .links{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+#contact .links i{
+    width: 2rem;
+}
+#contact .links p{
+    font-size: 0.9rem;
+}
+#contact .link i{
+    font-size: 1.2rem;
+    /* display: inline-block; */
+    margin-right: 1.6rem;
+}
+
+/* -------------------------- footer starts now ------------------------- */
+footer{
+    text-align: center;
+    background-color: #17263C;
+    padding: 2rem;
+}
+footer i{
+    color: var(--main-pink-color);
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hamburger menu */
+#navigation{
+    background-color: var(--main-white-color);
+    padding: 2% 0%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+#menu{
+    width: 35px;
+    height: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.bar{
+    width: 100%;
+    height: 5px;
+    background-color: var(--main-pink-color);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#bar2{
+    transform: translateY(4px);
+}
+#bar3{
+    transform: translateY(8px);
+}
+
+
+.nav{
+    display: none;
+}
+.nav li{
+    list-style-type: none;
+}
+.nav a{
+    display: inline-block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--main-blk-color);
+    padding: 10px 0px;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+
+.icon .bar{
+    background-color: var(--main-pink-color);
+}
+.icon #bar1{
+    transform: translateY(4px) rotate(-45deg);
+}
+.icon #bar2{
+    opacity: 0;
+}
+.icon #bar3{
+    transform: translateY(-6px) rotate(45deg);
+}
+
+.change{
+    background-color: var(--main-blk-color);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+    transition: 1s !important;
+}
+.change a{
+    color: var(--main-white-color);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
+    .inner{
+        margin: 0rem 4rem;
+    }
+
+    /* about */
+    #about{
+        flex-direction: column;
+    }
+
+    /* #details */
+    #details .times{
+        justify-content: center;
+        width: 50%;
+    }
+
+    /* services */
+    #services .box{
+        width: 48%;
+    }
+    #services i{
+        font-size: 10rem;
+    }
+    /* packs */
+    #packs .box{
+        width: 48%;
+        margin-top: 2rem;
+    }
+    #new{
+        transform: scale(1);
+    }
+
+    /* project */
+    #project .pic{
+        width: 100%;
+    }
+    #project .text{
+        width: 100%;
+    }
+
+    /* contact */
+    #contact .detail{
+        top: 14%;
+    }
+    #contact form{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #contact .address{
+        width: 100%;
+    }
+    #contact iframe{
+        width: 100%;
+        height: 1190px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 10px;
+    }
+
+    #navigation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+
+    /* about */
+    #about{
+        flex-direction: column;
+    }
+
+    /* resume */
+    #box-1{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    #box-2{
+        width: 100%;
+    }
+
+    /* details */
+    #details .times{
+        justify-content: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    #details .sub-t{
+        border-left: none;
+    }
+
+    /* services */
+    #services .box{
+        width: 100%;
+    }
+    #services i{
+        font-size: 8rem;
+    }
+    #services h4{
+        top: -8px;
+    }
+
+    /* packs */
+    #packs .box{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    #new{
+        transform: scale(1);
+    }
+
+    /* project */
+    #project .pic{
+        width: 100%;
+    }
+    #project .text{
+        width: 100%;
+    }
+
+    /* contact */
+    #contact .detail{
+        top: 14%;
+    }
+    #contact form{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #contact .address{
+        width: 100%;
+    }
+    #contact iframe{
+        width: 100%;
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .nav a{
+        font-size: 2rem;
+    }
+    .change{
+        width: 100%;
+    }
+}

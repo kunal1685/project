@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    /* border: 1px solid red; */
+}
+
+:root{
+    --black-color: #000;
+    --white-color: #fff;
+    --red-color: #e53637;
+    --gray-color: gray;
+    --light-color: #222;
+    --start-color: #f7941d;
+    --section5-color: #f3f2ee;
+}
+
+html{
+    font-size: 15px;
+}
+
+p{
+    margin: 0 !important;
+}
+
+
+.intro{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 0.8rem 0rem 0.6rem;
+}
+.intro p{
+    padding-top: 0.4rem;
+}
+.links{
+    text-align: right;
+}
+.links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-left: 1rem;
+}
+
+.intro form{
+    text-align: left;
+    color: var(--gray-color);
+}
+
+
+#mynavbar{
+    background-color: var(--white-color) !important;
+    padding: 2% 0%;
+}
+#mynavbar ul{
+    margin-left: 5em;
+    text-align: center !important;
+}
+#mynavbar ul a{
+    display: inline-block;
+    color: var(--black-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0rem 1.4rem;
+    transition: 0.5s;
+}
+#mynavbar ul a:hover{
+    border-bottom: 2px solid var(--red-color);
+}
+
+#mynavbar .search{
+    width: 150px;
+    text-align: right;
+    color: var(--gray-color);
+}
+#mynavbar .search i{
+    margin-left: 1rem;
+}
+
+/* section6 starts now */
+form a{
+    display: inline-block;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    margin-top: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    position: relative;
+}
+/* form a::after{
+    content: '';
+    width: 40%;
+    height: 2px;
+    background-color: var(--light-color);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+} */
+/* form a:hover::after{
+    width: 100%;
+    background-color: var(--red-color);
+} */
+
+/* iframe strats now */
+.map{
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+#contact{
+    padding: 100px 40px;
+}
+#contact h6{
+    color: var(--red-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+#contact h1{
+    color: var(--black-color);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+#contact p{
+    color: var(--gray-color);
+    padding-bottom: 2rem;
+    line-height: 30px;
+}
+#contact h3{
+    color: var(--black-color);
+    font-weight: 700;
+}
+#contact form{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.info input{
+    width: 47%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--section5-color);
+    outline: none;
+}
+
+#contact textarea{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-top: 30px;
+    border: 1px solid var(--section5-color);
+    outline: none;
+}
+/* footer starts now */
+footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 70px 40px 40px;
+}
+footer img{
+    width: 60%;
+    margin-bottom: 30px;
+}
+footer p{
+    color: var(--gray-color);
+}
+footer img:nth-child(n+2){
+    margin-top: 30px;
+}
+footer h6{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+footer .shop p{
+    margin-bottom: 10px !important;
+}
+footer form{
+    display: flex;
+}
+footer input{
+    flex: 1;
+    margin-top: 30px;
+    padding: 10px 5px;
+    background-color: transparent;
+    color: var(--white-color);
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--white-color);
+}
+footer span{
+    color: var(--red-color);
+}
+footer hr{
+    margin: 30px 0px !important;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .intro{
+        display: none;
+    }
+
+    .info input{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    html{
+        font-size: 10px;
+    }
+
+    #mynavbar ul{
+        margin-left: 0.5rem;
+        text-align: left !important;
+        padding: 2rem 0rem;
+    }
+    #mynavbar ul a{
+        padding: 0.6rem 0rem;
+    }
+    #mynavbar .search{
+        text-align: left;
+    }
+}

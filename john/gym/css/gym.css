@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+:root{
+    --ornage-color: #FB5B21;
+    --white-color: #F4F5F8;
+    --gray-color: #BDBDBF;
+    --black-color: #222429;
+}
+
+#myNavbar{
+    padding: 0% 1%;
+}
+#myNavbar .navbar-brand{
+    color: var(--ornage-color);
+    font-size: 50px;
+    font-weight: 700;
+    /* margin-right: 40px; */
+}
+#myNavbar ul:not(.dropdown-menu){
+    margin-left: 130px;
+}
+#myNavbar ul a{
+    padding: 0px 20px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+#myNavbar .btn{
+    background-color: var(--ornage-color);
+    padding: 15px 30px;
+    color: var(--white-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+/*------------------ carausel starts now -------------------- */
+.carousel img{
+    /* width: 100%;
+    height: 100vh; */
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-item::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+.carousel-caption{
+    position: relative;
+    z-index: 1;
+}
+.carousel .btn{
+    background-color: var(--ornage-color);
+    padding: 15px 30px;
+    color: var(--white-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.carousel .btn-2{
+    background-color: var(--white-color);
+    color: #333;
+}
+#caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+}
+#caption h5{
+    font-size: 1.4rem;
+}
+#caption h1{
+    font-size: 4rem;
+}
+span.carousel-control-prev-icon{
+    height: 50px;
+    width: 50px;
+}
+span.carousel-control-next-icon{
+    height: 50px;
+    width: 50px;
+}
+
+
+/*------------------ carausel starts now -------------------- */
+#section1{
+    padding-top: 100px;
+}
+#section1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#section1 h5{
+    text-transform: uppercase;
+    color: var(--ornage-color);
+}
+#section1 h1{
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#section1 h4{
+    font-size: 1.5rem;
+    margin: 1.6rem 0px;
+    color: var(--gray-color);
+}
+#section1 p{
+    font-size: 1.1rem;
+}
+
+#section1 .why{
+    background-color: var(--black-color);
+    padding: 4rem;
+}
+#section1 .why p{
+    color: var(--gray-color);
+}
+#section1 .abt{
+    text-align: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+#section1 .abt .btn1{
+    width: 100%;
+    background-color: var(--ornage-color);
+    color: var(--white-color);
+    padding: 0.3rem;
+    border: none;
+    border-radius: 2px;
+}
+#section1 .abt .btn2{
+    background-color: transparent;
+    color: var(--ornage-color);
+    border: none;
+    padding: 0.3rem;
+}
+
+#section1 .sub-section1{
+    padding-left: 3rem;
+}
+
+/*------------------ carausel2 starts now -------------------- */
+#section2{
+    background-color: var(--black-color);
+    margin-top: 12rem;
+    padding-bottom: 5rem;
+}
+
+#section2 .box{
+    width: 95%;
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 4rem;
+    margin-top: -5rem;
+    border-radius: 5px;
+}
+#section2 h2{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1.5rem 0rem;
+}
+#section2 i{
+    font-size: 6rem;
+    color: var(--ornage-color);
+}
+#section2 .ml{
+    margin-left: 7%;
+}
+#section2 .mr{
+    margin-left: 3.5%;
+}
+#section2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--ornage-color);
+    font-weight: 2rem;
+}
+#section2 a i{
+    font-size: 1.2rem;
+}
+
+#section2 .discount{
+    color: var(--white-color);
+    margin-top: 3rem;
+}
+#section2 .discount a{
+    display: inline-block;
+    background-color: var(--ornage-color);
+    color: var(--white-color);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+/*------------------ carausel3 starts now -------------------- */
+#section3{
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+#section3 h5{
+    color: var(--ornage-color);
+}
+#section3 h1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+#sub-section-3{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 100px 0px;
+}
+#sub-section-3 p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-bottom: 0rem;
+}
+#sub-section-3 i{
+    float: left;
+    background-color: var(--ornage-color);
+    font-size: 1.7rem;
+    padding: 1rem;
+    margin-right: 2rem;
+    border-radius: 50px;
+}
+
+/*------------------ carausel4 starts now -------------------- */
+#section4{
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+#section4 h5{
+    color: var(--ornage-color);
+}
+#section4 h1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+#section4 .pic{
+    color: var(--white-color);
+    margin-top: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+#section4 img{
+    width: 100%;
+}
+#section4 .btm-center{
+    background-color: rgba(51, 51, 51, 0.883);
+    padding: 25px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#section4 h6{
+    font-size: 1.2rem;
+}
+#section4 .btm-center p{
+    margin: 0;
+}
+
+#section4 .layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.828);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100%;
+    transition: 0.5s;
+}
+#section4 .pic:hover .layer{
+    top: 0;
+}
+#section4 i{
+    color: var(--black-color);
+    background-color: var(--white-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50px;
+}
+#section4 .fb{
+    padding: 12px 14px;
+}
+
+/*------------------ carausel5 starts now -------------------- */
+#section5{
+    padding: 100px 0px 0px;
+    text-transform: uppercase;
+}
+#section5 .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* margin-right: 2rem; */
+}
+#section5 .p1{
+    padding: 0;
+    margin: 0;
+}
+#section5 .owl-section{
+    padding: 2rem 4rem;
+    background-color: var(--black-color);
+}
+#section5 .owl-theme img{
+    float: left;
+    width: 20%;
+    margin-right: 2rem;
+    border-radius: 100%;
+}
+#section5 h5{
+    color: var(--ornage-color);
+}
+#section5 h1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+    color: var(--white-color);
+}
+#section5 i{
+    color: var(--ornage-color);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+#section5 p{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+}
+#section5 h4{
+    color: var(--white-color);
+}
+#section5 h6{
+    color: var(--white-color);
+}
+#section5 .text{
+    padding: 1.5rem;
+}
+
+.owl-nav span{
+    background-color: var(--ornage-color);
+    padding: 0.7rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 100%;
+}
+.owl-nav{
+    text-align: left !important;
+}
+.owl-theme .owl-nav{
+    margin-top: 3rem !important;
+}
+
+/*------------------ sectionl6 starts now -------------------- */
+#section6{
+    padding: 100px 0px;
+    text-transform: uppercase;
+}
+#section6 h5{
+    color: var(--ornage-color);
+}
+#section6 h1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+#section6 .row{
+    margin: 0;
+}
+#section6 .pic{
+    margin-top: 4rem;
+    border-radius: 2px;
+    overflow: hidden;
+}
+#section6 img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+}
+#section6 img:hover{
+    transform: scale(1.2,1.2);
+}
+#section6 .top-left{
+    height: 100%;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+#section6 h4{
+    float: left;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    border-right: 1px solid var(--white-color);
+}
+#section6 h4 span{
+    font-weight: 400;
+    color: var(--gray-color);
+}
+#section6 h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+
+/*------------------ footer starts now -------------------- */
+footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    /* padding: 4rem 0rem; */
+}
+footer .links{
+    padding: 3rem;
+}
+footer h3{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+footer i{
+    color: var(--ornage-color);
+    width: 20px;
+}
+footer p{
+    color: var(--gray-color);
+}
+footer .mail{
+    text-align: center;
+    background-color: var(--ornage-color);
+    color: var(--white-color);
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer form{
+    width: 100%;
+    display: flex;
+}
+footer input{
+    flex: 1;
+    width: 59%;
+    padding: 1rem;
+    border: none;
+}
+footer form input:nth-child(1){
+    padding-right: 4.5rem;
+}
+footer form input:nth-child(2){
+    /* width: 20%; */
+    text-transform: uppercase;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+/*------------------ copy-right starts now -------------------- */
+.copy-right p{
+    margin: 0;
+    padding: 2rem 0rem;
+    background-color: #111;
+    color: var(--white-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px){
+    #myNavbar ul:not(.dropdown-menu){
+        margin-left: 20px;
+    }
+    #myNavbar .btn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    html{
+        font-size: 10px;
+    }
+    #myNavbar .nav-link{
+        padding: 15px 0px;
+    }
+    #myNavbar .dropdown-item{
+        padding: 10px;
+    }
+
+    /* carousel */
+    .carousel img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    #caption{
+        display: block !important;
+    }
+
+    /* section1 */
+    #section1{
+        padding: 100px 50px;
+    }
+    #section1 .sub-section1{
+        padding-left: 0rem;
+        padding-top: 2rem;
+    }
+
+    /* section2 */
+    #section2{
+        padding: 0px 50px;
+        margin-top: 4rem;
+    }
+    #section2 .box{
+        width: 100%;
+        margin-bottom: 8rem;
+    }
+    #section2 .ml{
+        margin-left: 0%;
+    }
+    #section2 .mr{
+        margin-left: 0%;
+    }
+    #section2 .discount{
+        margin-top: 0rem;
+    }
+    #section2 .discount a{
+        margin-bottom: 5rem;
+    }
+
+    /* section3 */
+    #sub-section-3{
+        padding: 50px 50px;
+    }
+    #sub-section-3 h2{
+        margin-bottom: 20px;
+    }
+
+    /* section6 */
+    #section6{
+        padding: 100px 50px;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #section4 .pic{
+        margin-top: 4rem;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}

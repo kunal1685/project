@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/contact_h.css" type="text/css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/40ab788ebc.js" crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.3.js"></script>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <img src="hosting/img/bg-square.png" alt="square">
+        </div>
+
+        <div class="round-1">
+            <img src="hosting/img/bg-round.png" alt="round-1">
+        </div>
+
+        <div class="round-2">
+            <img src="hosting/img/bg-round-2.png" alt="round-2">
+        </div>
+
+        <div class="lines">
+            <img src="hosting/img/bg-line.png" alt="lines">
+        </div>
+        <nav>
+            <div class="logo">
+                <h1><i class="fa fa-server"></i>GreenHost</h1>
+            </div>
+
+            <ul>
+                <li><a href="hosting.html" target="_blank">Home</a></li>
+                <li><a href="about_h.html" target="_blank">About</a></li>
+                <li><a href="domain_h.html" target="_blank">Domain</a></li>
+                <li><a href="hosting_h.html" target="_blank">Hosting</a></li>
+                <li><a href="contact_h.html">Contact</a></li>
+
+                <div class="btn">
+                    <a href="#">Register</a>
+                </div>
+            </ul>
+
+            <button><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+        <div class="banner inner">
+            <h1>Contact Us</h1>
+            <a href="hosting.html" target="_blank">Home</a> /
+            <a href="about_h.html">About</a>/
+            <a href="contact_h.html" target="_blank">Contact</a>
+        </div>
+
+        <div class="btm-img">
+            <img src="hosting/img/bg-bottom-hero.png" alt="">
+        </div>
+    </header>
+
+    <!-- section1 starts now -->
+    <div id="section1" class="inner">
+        <h1>Contact For Any Query</h1>
+        <p>Vero justo sed sed vero clita amet. Et justo vero sea diam elitr amet ipsum eos ipsum clita duo sed. Sed vero sea diam erat vero elitr sit clita.</p>
+        <div class="boxes flex">
+            <div class="box-1">
+                <form action="" onsubmit="return validation()">
+                    <div class="details">
+                        <input type="text" name="Full_name" placeholder="Your Name" id="user">
+
+                        <span id="username"></span>
+
+                        <input type="email" name="Mail" placeholder="Your Email" id="pass">
+                        <span id="password"></span>
+
+                    </div>
+
+                    <input type="text" name="subject" placeholder="Subject" id="sub">
+                    <span id="subject"></span>
+
+                    <textarea name="description" id="" cols="5" rows="6" placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message">
+                    <!-- <a href="">click</a> -->
+                </form>
+            </div>
+            <div class="box-2">
+                <h2>Customer Support</h2>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                <p><i class="fa-solid fa-phone"></i> +012 345 67890</p>
+                <p><i class="fa-solid fa-envelope"></i> info@example.com</p>
+
+                <div class="chat">
+                    <h2>Need Any Help ?</h2>
+                    <a href="#">Let's Chat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <footer>
+            <div class="boxes inner flex">
+                <div class="box-1">
+                    <h2>Subscribe Our Newsletter</h2>
+                    <div class="links">
+                        <div class="about">
+                            <h2>About Us</h3>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>About Us</a>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>Contact Us</a>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>Privacy Policy</a>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>Terms & Condition</a>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>Support</a>
+                        </div>
+                        <div class="about">
+                            <h2>Our Services</h2>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>Domain Register</a>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>Shared Hosting</a>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>VPS Hosting</a>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>Dedicated Hosting</a>
+                            <a href="#"><i class="fa-solid fa-greater-than"></i>Reseller Hosting</a>
+                        </div>
+                        <div class="about">
+                            <h2>Get in Touch</h2>
+                            <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                            <p><i class="fa-solid fa-phone"></i> +012 345 67890</p>
+                            <p><i class="fa-solid fa-envelope"></i> info@example.com</p>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="mail" placeholder="Email">
+                        <textarea name="Message" id="" cols="30" rows="2" placeholder="Message"></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+    
+            <div class="info inner flex">
+                <p>All Right Reserved. Designed By Kunal Saini</p>
+                <div class="home flex">
+                    <a href="#">Home | </a>
+                    <a href="#">Cookies | </a>
+                    <a href="#">Help | </a>
+                    <a href="#">FQAs</a>
+                </div>
+            </div>
+        </footer>
+    
+
+    <script src="js/contact_h.js"></script>
+</body>
+</html>

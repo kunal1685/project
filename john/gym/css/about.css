@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+:root{
+    --ornage-color: #FB5B21;
+    --white-color: #F4F5F8;
+    --gray-color: #BDBDBF;
+    --black-color: #222429;
+}
+
+
+#myNavbar{
+    padding: 0% 1%;
+}
+#myNavbar .navbar-brand{
+    color: var(--ornage-color);
+    font-size: 50px;
+    font-weight: 700;
+    /* margin-right: 40px; */
+}
+#myNavbar ul:not(.dropdown-menu){
+    margin-left: 130px;
+}
+#myNavbar ul a{
+    padding: 0px 20px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+#myNavbar .btn{
+    background-color: var(--ornage-color);
+    padding: 15px 30px;
+    color: var(--white-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+/*------------------ carausel starts now -------------------- */
+#about{
+    background-image: linear-gradient(rgba(50,50,50,0.6),rgba(50,50,50,0.6)), url(../gym/img/carousel-1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 8rem;
+}
+#about h1{
+    color: var(--white-color);
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+#about .btn{
+    padding: 0.7rem 3rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#about .btn1{
+    background-color: var(--ornage-color);
+}
+#about .btn2{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+/*------------------ carausel starts now -------------------- */
+#section1{
+    padding-top: 100px;
+}
+#section1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#section1 h5{
+    text-transform: uppercase;
+    color: var(--ornage-color);
+}
+#section1 h1{
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#section1 h4{
+    font-size: 1.5rem;
+    margin: 1.6rem 0px;
+    color: var(--gray-color);
+}
+#section1 p{
+    font-size: 1.1rem;
+}
+
+#section1 .why{
+    background-color: var(--black-color);
+    padding: 4rem;
+}
+#section1 .why p{
+    color: var(--gray-color);
+}
+#section1 .abt{
+    text-align: center;
+    display: flex;
+    margin-bottom: 1rem;
+}
+#section1 .abt .btn1{
+    width: 100%;
+    background-color: var(--ornage-color);
+    color: var(--white-color);
+    padding: 0.3rem;
+    border: none;
+    border-radius: 2px;
+}
+#section1 .abt .btn2{
+    background-color: transparent;
+    color: var(--ornage-color);
+    border: none;
+    padding: 0.3rem;
+}
+
+#section1 .sub-section1{
+    padding-left: 3rem;
+}
+
+/*------------------ carausel3 starts now -------------------- */
+#section3{
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+#section3 h5{
+    color: var(--ornage-color);
+}
+#section3 h1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+#sub-section-3{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 100px 0px;
+}
+#sub-section-3 p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gray-color);
+    margin-bottom: 0rem;
+}
+#sub-section-3 i{
+    float: left;
+    background-color: var(--ornage-color);
+    font-size: 1.7rem;
+    padding: 1rem;
+    margin-right: 2rem;
+    border-radius: 50px;
+}
+
+/*------------------ footer starts now -------------------- */
+footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    margin-top: 150px;
+    /* padding: 4rem 0rem; */
+}
+footer .links{
+    padding: 3rem;
+}
+footer h3{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+footer i{
+    color: var(--ornage-color);
+    width: 20px;
+}
+footer p{
+    color: var(--gray-color);
+}
+footer .mail{
+    text-align: center;
+    background-color: var(--ornage-color);
+    color: var(--white-color);
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer form{
+    width: 100%;
+    display: flex;
+}
+footer input{
+    flex: 1;
+    width: 59%;
+    padding: 1rem;
+    border: none;
+}
+footer form input:nth-child(1){
+    padding-right: 4.5rem;
+}
+footer form input:nth-child(2){
+    /* width: 20%; */
+    text-transform: uppercase;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1100px){
+    #myNavbar ul:not(.dropdown-menu){
+        margin-left: 20px;
+    }
+    #myNavbar .btn{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    html{
+        font-size: 10px;
+    }
+    #myNavbar .nav-link{
+        padding: 15px 0px;
+    }
+    #myNavbar .dropdown-item{
+        padding: 10px;
+    }
+
+    /* about */
+    #about{
+        height: 50vh;
+        padding: 0rem;
+        position: relative;
+    }
+    .txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    /* section1 */
+    #section1{
+        padding: 100px 50px;
+    }
+    #section1 .sub-section1{
+        padding-left: 0rem;
+        padding-top: 2rem;
+    }
+}
